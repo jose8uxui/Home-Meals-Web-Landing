@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritional Information</title>
+
+    <!--- CSS3 SCRIPTS --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lineicons CSS -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <header class="header" style="box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.059);">
+        <div class="header-inner">
+            <div style="display: flex; background-color: #F7A53B; color: white; padding: .2% 0;">
+                <div class="container px-lg-5">
+                    <div class="row">
+                        <div class="col-md-6" style="display: flex; align-items: center;">
+                            <!-- Facebook -->
+                            <a class="btn btn-floating btn-lang" style="color: white;"><i class="lni lni-facebook-fill"></i></a>
+                            <!-- Instagram -->
+                            <a class="btn btn-floating btn-lang" style="color: white;"><i class="lni lni-instagram-original"></i></a>
+                            <!-- Tiktok -->
+                            <a class="btn btn-floating btn-lang" style="color: white;"><i class="lni lni-tiktok-alt"></i></a>
+                            <!-- YouTube -->
+                            <a class="btn btn-floating btn-lang" style="color: white;"><i class="lni lni-youtube"></i></a>
+                        </div>
+                        <div class="col-md-6" style="display: flex; justify-content: flex-end; text-align: right; align-items: center;">
+                            <span style="font-size: .95em;">Languaje: </span>
+                            <select class="form-control form-control-sm btn-lang">
+                                <option>English</option>
+                                <option>Español</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <nav class="navbar navbar-expand-lg my-navbar">
+                    <a class="navbar-brand" href="#">
+                        <span class="logo">
+                            <img src="images/homemeals_logo_Mesa de trabajo 1.svg" class="img-fluid" style="width: 70%; margin:-3px 0px 0px 0px;">
+                        </span>
+                    </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars" style="margin:5px 0px 0px 0px;"></i></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: end;">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Combine Recipes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">How it works?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+      </header>
+      
+      <section id="home">
+
+        <div class="container" class="first_Section" style="padding: 0 10%;">
+            <div class="row">
+                <div class="col-md-12" style="text-align: center; margin-bottom: 3%;">
+
+                    <img src="images/homemeals_logo_Mesa de trabajo 1.svg" width="30%" style="margin: 0 auto;" alt="">
+
+                </div>
+                <div class="col-md-12" style="text-align: justify;">
+                    <h1 style="text-align: center;">
+                        <span>
+                            Nutritional Value
+                        </span>
+                        <br>
+                        <span style="font-weight: 100;">
+                            Calculation
+                        </span>
+                    </h1>
+                    <br><br>
+                    <p>
+                        Most of our nutritional values at HomeMeals come from the USDA FoodData Central <a href="https://fdc.nal.usda.gov/fdc-app.html#/">(https://fdc.nal.usda.gov/fdc-app.html#/)</a> 
+                        and the Food Composition Table of Central America <a href="https://www.incap.int/mesocaribefoods/dmdocuments/TablaCAlimentos.pdf">( https://www.incap.int/mesocaribefoods/dmdocuments/TablaCAlimentos.pdf )</a>, 
+                        which are comprehensive databases of nutritional information managed by the United States Department of Agriculture (USDA) 
+                        and the Institute of Nutrition of Central America and Panama (INCAP), respectively. Within these databases, 
+                        details about the nutritional composition of a wide variety of raw or processed foods can be provided 
+                        and are used by healthcare professionals, nutritionists, 
+                        researchers, and the general public to obtain accurate information about the nutritional content of foods.
+                    </p>
+
+                    <p>Additionally, we gather information from nutritional value labels of processed products when necessary.</p>
+
+                    <p>
+                        Furthermore, we collaborate with certified nutritionists, graduates of the University of Medical Sciences, 
+                        and incorporated into the respective College of Nutrition Professionals, 
+                        to ensure the accuracy of our database.
+                    </p>
+
+                    <p>
+                        It is important to remember that these calculations are estimates based on the products used and may 
+                        vary depending on the accuracy of the available information, the precision of the measurements used, 
+                        geographical location, and the type of brands used. Therefore, if you have specific nutritional needs 
+                        or are following a particular diet, 
+                        it is advisable to consult with a nutritionist for more accurate and personalized guidance
+                    </p>
+
+                    <p>
+                        The methodology used to calculate the nutritional value of each of the created recipes is as follows:
+                    </p>
+
+                    <ul>
+                        <li>Ingredient Compilation: All recipe ingredients, including specific quantities, are recorded.</li>
+                        <li>Nutritional Information Source Consultation: 
+                            Our food databases are used to obtain precise nutritional information per gram for each ingredient.</li>
+                        <li>Ingredient Weighing: Each ingredient is accurately weighed, including both solid and liquid ingredients.</li>
+                        <li>Calculations: With the nutritional information and quantities of each ingredient, necessary calculations are performed. 
+                            The unit of 1 gram per ingredient is used as a reference, and nutritional values are multiplied according 
+                            to the amount necessary for 1 portion. The formula used is as follows: Total Nutritional Value=Grams 
+                            of Ingredient×Nutritional ValueTotal Nutritional Value=Grams of Ingredient×Nutritional Value 
+                            This is a mathematical representation of how the quantities of ingredients 
+                            and their respective nutritional values combine to obtain the total nutritional value of the recipe.</li>
+                        <li>Information Recording: All calculations and values obtained are documented in the databases. 
+                            A simple example of how the nutritional value is calculated in one of the recipes would be as follows: 
+                            if a recipe requires 10 grams of butter per serving and the USDA indicates that the calorie content 
+                            in 1 gram of butter is 7.17, the calories are multiplied by the grams, 
+                            resulting in a final value of 71.7 calories from that ingredient per serving.</li>
+                    </ul>
+                    <br>
+                    <h3>
+                        References:
+                    </h3>
+                    <p>
+                        <span style="font-weight: 600;">Nutrition Facts Tables:</span><br>
+                        <a href="https://fdc.nal.usda.gov/fdc-app.html#/">
+                            https://fdc.nal.usda.gov/fdc-app.html#/
+                        </a><br>
+                        <a href="https://www.incap.int/mesocaribefoods/dmdocuments/TablaCAlimentos.pdf.">
+                            https://www.incap.int/mesocaribefoods/dmdocuments/TablaCAlimentos.pdf.
+                        </a>
+                    </p>
+                    <p>
+                        <span style="font-weight: 600;">Nutrition Information Calculation:</span><br>
+                        <a href="https://www.spao.es/images/formacion/pdf/biblioteca/entrada-biblioteca-fichero-57.pdf">
+                            https://www.spao.es/images/formacion/pdf/biblioteca/entrada-biblioteca-fichero-57.pdf
+                        </a><br>
+                        <a href="https://uvadoc.uva.es/bitstream/handle/10324/20846/TFM-L314.pdf;jsessionid=474824B986CB8CF510DAE8E7FF21CA39?sequence=1">
+                            https://uvadoc.uva.es/bitstream/handle/10324/20846/TFM-L314.pdf;jsessionid=474824B986CB8CF510DAE8E7FF21CA39?sequence=1
+                        </a>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+      </section>
+
+      <footer style="background-color: #8593a333; border-top: #F7A53B solid 1px;">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-2" style="font-weight: 800;">Conect with<br><span style="font-weight: 200;">
+                        Home<span style="color: #F7A53B; font-weight: 400;">Meals</span></span>
+                    </h5>
+                    <div class="mt-1">
+                    <!-- Facebook -->
+                    <a class="btn btn-floating btn-lg"><i class="lni lni-facebook-fill"></i></a>
+                    <!-- Instagram -->
+                    <a class="btn btn-floating btn-lg"><i class="lni lni-instagram-original"></i></a>
+                    <!-- Tiktok -->
+                    <a class="btn btn-floating btn-lg"><i class="lni lni-tiktok-alt"></i></a>
+                    <!-- YouTube -->
+                    <a class="btn btn-floating btn-lg"><i class="lni lni-youtube"></i></a>
+                    </div>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-2" style="color: #F7A53B; font-weight: 600;">Terms</h5>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms and conditions</li>
+                        <li>Medical disclaimer</li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-2" style="color: #F7A53B; font-weight: 600;">Terms</h5>
+                    <li>About Us</li>
+                    <li>Nutritional values</li>
+                    <li>Need a hand?</li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-2" style="font-weight: 800; color: #F7A53B; text-align: end;">Download<br><span style="font-weight: 200; color: #6A7682;">
+                        Home<span style="font-weight: 400;">Meals</span> App</span>
+                    </h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/store_appsG&A-01.png" width="100%" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="images/store_appsG&A-02.png" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-1" style="background-color: #353B41; color: white;">
+            Copyright by ©HomeMeals 2024
+        </div>
+        <!-- Copyright -->
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
