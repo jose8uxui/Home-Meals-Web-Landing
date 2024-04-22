@@ -1,0 +1,20 @@
+.text {
+    font-size: 1em;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+  
+    &::after {
+      content: "|";
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 8px;
+      animation: blink 0.7s infinite alternate;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
+  }

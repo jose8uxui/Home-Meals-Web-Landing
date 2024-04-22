@@ -8,15 +8,26 @@
     <!--- CSS3 SCRIPTS --->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <!-- Lineicons CSS -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
 </head>
 <body>
+
+    <!---////////////////////////////////////////////////////--->
+    <!------------------------ HEADER -------------------------->
+
     <header class="header" style="box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.059);">
         <div class="header-inner">
             <div style="display: flex; background-color: #F7A53B; color: white; padding: .2% 0;">
                 <div class="container px-lg-5">
                     <div class="row">
-                        <div class="col-md-6" style="display: flex; align-items: center;">
+                        <div class="col-md-6 socialMediaMenu">
                             <!-- Facebook -->
                             <a class="btn btn-floating btn-lang" style="color: white;"><i class="lni lni-facebook-fill"></i></a>
                             <!-- Instagram -->
@@ -26,7 +37,7 @@
                             <!-- YouTube -->
                             <a class="btn btn-floating btn-lang" style="color: white;"><i class="lni lni-youtube"></i></a>
                         </div>
-                        <div class="col-md-6" style="display: flex; justify-content: flex-end; text-align: right; align-items: center;">
+                        <div class="col-md-6 langMenu">
                             <span style="font-size: .95em;">Languaje: </span>
                             <select class="form-control form-control-sm btn-lang">
                                 <option>English</option>
@@ -37,10 +48,10 @@
                 </div>
             </div>
             <div class="container px-lg-5">
-                <nav class="navbar navbar-expand-lg my-navbar">
-                    <a class="navbar-brand" href="#">
+                <nav class="navbar navbar-expand-lg my-navbar navP">
+                    <a class="navbar-brand" href="index.html">
                         <span class="logo">
-                            <img src="images/homemeals_logo_Mesa de trabajo 1.svg" class="img-fluid" style="width: 70%; margin:-3px 0px 0px 0px;">
+                            <img src="images/homemeals_logo_Mesa de trabajo 1.svg" class="img-fluid">
                         </span>
                     </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,6 +75,12 @@
             </div>
         </div>
       </header>
+
+    <!------------------------ HEADER -------------------------->
+    <!---////////////////////////////////////////////////////--->
+
+    <!---////////////////////////////////////////////////////--->
+    <!------------------------ SLIDER -------------------------->
       
       <section id="home">
 
@@ -71,7 +88,10 @@
             <div class="row">
                 <div class="col-md-4" style="align-content: center; vertical-align: middle;">
                     <h1>
-                        Easy home meals for your <span style="color: #F7A53B;">F...</span>
+                        Easy home meals for your 
+                        <span class="head" style="color: #F7A53B; font-weight: 700;">
+                            <span class="text" id="text"></span>
+                        </span>
                     </h1>
                     <br>
                     <p style="font-size: 1.3em;">
@@ -88,7 +108,13 @@
         </div>
 
     </section>
-    <br><br>
+
+    <!------------------------ SLIDER -------------------------->
+    <!---////////////////////////////////////////////////////--->
+
+    <!---////////////////////////////////////////////////////--->
+    <!-------------------- LEARN TO COOK ----------------------->
+
     <section>
         <div class="container second_Section" style="text-align: center;">
             <h2>
@@ -126,79 +152,380 @@
         </div>
     </section>
 
-    <footer style="background-color: #8593a333; border-top: #F7A53B solid 1px;">
-        <!-- Grid container -->
-        <div class="container p-4">
-            <!--Grid row-->
-            <div class="row mt-4">
+    <!-------------------- LEARN TO COOK ----------------------->
+    <!---////////////////////////////////////////////////////--->
 
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-                    <h5 class="mb-2" style="font-weight: 800;">Conect with<br><span style="font-weight: 200;">
-                        Home<span style="color: #F7A53B; font-weight: 400;">Meals</span></span>
-                    </h5>
-                    <div class="mt-1">
-                    <!-- Facebook -->
-                    <a class="btn btn-floating btn-lg"><i class="lni lni-facebook-fill"></i></a>
-                    <!-- Instagram -->
-                    <a class="btn btn-floating btn-lg"><i class="lni lni-instagram-original"></i></a>
-                    <!-- Tiktok -->
-                    <a class="btn btn-floating btn-lg"><i class="lni lni-tiktok-alt"></i></a>
-                    <!-- YouTube -->
-                    <a class="btn btn-floating btn-lg"><i class="lni lni-youtube"></i></a>
+    <!---////////////////////////////////////////////////////--->
+    <!------------------- COMBINE PROTEINS --------------------->
+
+        <section>
+            <div class="container thirth_Section" >
+                <div class="row">
+                    <div class="col-md-8">
+                        <div>
+                            <h2>
+                                Explore thousands of ways to
+                                <span class="titleBoldYellow">
+                                    combine the proteins, salads, sides....
+                                </span>
+                                you love
+                            </h2>
+                        </div>
+                        <div class="container" style="padding: 0 15%; text-align: center; margin-bottom: 5%;">
+
+                    <!----////////////////////  CAROUSEL  //////////////////////---->
+
+                    <div class="container">
+                        <div class="swiper swiperCarousel">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="avatar" src="https://i.pravatar.cc/200?img=31" />
+                                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                                  <path
+                                    d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                                  />
+                                </svg>
+                                        <div class="header">
+                                            <h1 class="name">Amy Liu</h1>
+                                            <h2 class="title">CTO, Cybertech Solutions</h2>
+                                        </div>
+                                        <div class="quote-container">
+                                            <p class="quote">
+                                                I must admit, as a software developer, I was skeptical about the MindSync Neural Interface. But once I saw how it could transform not just the way I work but also how I engage with the world, I was sold. Its integration capability and responsiveness are unlike anything I've seen before. We're not just talking about a step forward in technology, but a quantum leap into the future.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="avatar" src="https://i.pravatar.cc/200?img=26" />
+                                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                                  <path
+                                    d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                                  />
+                                </svg>
+                                        <div class="header">
+                                            <h1 class="name">Sarah Price</h1>
+                                            <h2 class="title">Sr. Technology Analyst</h2>
+                                        </div>
+                                        <div class="quote-container">
+                                            <p class="quote">
+                                                The MindSync Neural Interface is a game-changer in technology that's redefining the way we interact with digital devices. With the seamless and intuitive connection, it has reduced the cognitive load of my everyday tasks. As a busy professional, I no longer have to divide my attention across multiple devices. This revolutionary product has managed to marry convenience and functionality in a way I had never thought possible.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="avatar" src="https://i.pravatar.cc/200?img=69" />
+                                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                                  <path
+                                    d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                                  />
+                                </svg>
+                                        <div class="header">
+                                            <h1 class="name">Dr. Miguel Torres</h1>
+                                            <h2 class="title">Head of Neurobiology, Central University</h2>
+                                        </div>
+                                        <div class="quote-container">
+                                            <p class="quote">
+                                                The day I started using the MindSync Neural Interface, I understood it wasn't just an ordinary gadget, but an extraordinary leap in technological innovation. Its user-friendly nature, mixed with the uncanny ability to understand and process my thoughts, is genuinely awe-inspiring. It's as if it took the immense complexity of the human brain and made it accessible, all without compromising my privacy or security.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="avatar" src="https://i.pravatar.cc/200?img=59" />
+                                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                                  <path
+                                    d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                                  />
+                                </svg>
+                                        <div class="header">
+                                            <h1 class="name">Benjamin Moore</h1>
+                                            <h2 class="title">
+                                                Director of HCI, FutureTech
+                                            </h2>
+                                        </div>
+                                        <div class="quote-container">
+                                            <p class="quote">
+                                                The MindSync Neural Interface isn't just an upgrade, it's an evolution. The way it syncs effortlessly with my thought processes makes it feel like a natural extension of my mind. It's empowering and liberating to interact with my digital world in such a direct, fluid manner. This is a tool that makes technology feel less like a barrier and more like an ally.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="avatar" src="https://i.pravatar.cc/200?img=49" />
+                                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                                  <path
+                                    d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                                  />
+                                </svg>
+                                        <div class="header">
+                                            <h1 class="name">Dr. Simone Laurent</h1>
+                                            <h2 class="title">Chief Neurologist, NeuroTech Hospital</h2>
+                                        </div>
+                                        <div class="quote-container">
+                                            <p class="quote">
+                                                As a neurologist, I can attest that the MindSync Neural Interface is an absolute marvel. The accuracy with which it translates neural signals into digital actions is astounding. But what impresses me more is how it manages to do so with such finesse, ensuring an unintrusive and seamless user experience. This is truly a leap in making technology more intuitively human.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="avatar" src="https://i.pravatar.cc/200?img=68" />
+                                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="125px" height="125px">
+                                  <path
+                                    d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+                                  />
+                                </svg>
+                                        <div class="header">
+                                            <h1 class="name">Jared Foster</h1>
+                                            <h2 class="title">Sr. Tech Journalist, Digital Frontier</h2>
+                                        </div>
+                                        <div class="quote-container">
+                                            <p class="quote">
+                                                As a technology journalist, I've seen numerous gadgets come and go. However, the MindSync Neural Interface isn't just a flash in the pan - it's here to revolutionize the way we perceive and interact with technology. The convenience it brings, coupled with its stellar performance, makes it more than just a device - it's an experience. One that is utterly transformative in the truest sense of the word.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <!----//////////////////  end CAROUSEL  ////////////////////---->
+
+                        <br>
+                        <h3>
+                            Our Chef’s do the work for you
+                        </h3>
+                        <br>
+                        <p style="font-size: 1.3em;">
+                            Choose your favorite protein, side dish, or salad, and we'll show you personalized 
+                            dish combination ideas, or built your own combinations and visualize them 
+                            in real time
+                        </p>
+                        <br>
+                        <button type="submit" class="btn btn-primary btn-submit" style="margin: 0% 2%; padding: 2.5% 8%;">
+                            Learn more
+                        </button>
                     </div>
                 </div>
-                <!--Grid column-->
-    
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-                    <h5 class="mb-2" style="color: #F7A53B; font-weight: 600;">Terms</h5>
-                    <ul>
-                        <li>Privacy Policy</li>
-                        <li>Terms and conditions</li>
-                        <li>Medical disclaimer</li>
-                    </ul>
+                <div class="col-md-4" style="padding: 0;">
+                    <img src="images/mockUp02Home.png" width="100%" style="width: 500px; margin-left: -15%;" alt="">
                 </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-                    <h5 class="mb-2" style="color: #F7A53B; font-weight: 600;">Terms</h5>
-                    <li>About Us</li>
-                    <li>Nutritional values</li>
-                    <li>Need a hand?</li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-                    <h5 class="mb-2" style="font-weight: 800; color: #F7A53B; text-align: end;">Download<br><span style="font-weight: 200; color: #6A7682;">
-                        Home<span style="font-weight: 400;">Meals</span> App</span>
-                    </h5>
-                    <div class="row">
-                        <div class="col-6">
-                            <img src="images/store_appsG&A-01.png" width="100%" alt="">
-                        </div>
-                        <div class="col-6">
-                            <img src="images/store_appsG&A-02.png" width="100%" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!--Grid column-->
-
             </div>
-            <!--Grid row-->
         </div>
-        <!-- Grid container -->
-    
-        <!-- Copyright -->
-        <div class="text-center p-1" style="background-color: #353B41; color: white;">
-            Copyright by ©HomeMeals 2024
-        </div>
-        <!-- Copyright -->
-    </footer>
+    </section>
 
+    <!------------------- COMBINE PROTEINS --------------------->
+    <!---////////////////////////////////////////////////////--->
+
+    <!---////////////////////////////////////////////////////--->
+    <!------------------- COMBINE PROTEINS --------------------->
+
+    <section class="fourSection">
+        <div class="container" style="text-align: center;">
+            <h2 style="padding: 0 20%;">
+                Simplify your week:
+                <span class="titleBoldYellow">
+                    Smart Meal Planning
+                </span>
+                in minutes
+            </h2>
+            <br><br>
+            <div class="row">
+                <di class="col-md-4">
+                    <img src="images/img01_Sect04.png" width="100%" alt="">
+                </di>
+                <di class="col-md-4">
+                    <img src="images/imag02_sec04.png" width="100%" alt="">
+                </di>
+                <di class="col-md-4">
+                    <img src="images/imag03_sec04.png" width="100%" alt="">
+                </di>
+            </div>
+            <div class="row">
+                <div class="col-md-6" style="margin-top: -8%;">
+                    <img src="images/CalendarHome.png" width="100%" alt="">
+                </div>
+                <div class="col-md-6 d-flex" style="font-size: 1.3em; text-align: left; align-items: center; vertical-align: middle;">
+                    <p>
+                        Manual Option: Create meal plans with your favorite dishes, for up to 3 weeks
+                    </p>
+                    <p>
+                        Assisted Option: Answer a few simple questions and get a meal plan for up to 3 weeks, in just minutes
+                    </p>
+                </div>
+            </div>
+            <h3>
+                Save time and master your weekly menus with us!
+            </h3>
+        </div>
+    </section>
+
+    <section style="background-color: #F7A53B;">
+        <div class="container">
+            <p>
+                We have a <strong>FREE</strong> weekly menu for you
+            </p>
+            <button>
+                Download now!
+            </button>
+            <img src="images/PlanMealsGratisFREE.png" width="30%" style="">
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/muckUpMealPlanner List_Home.png" width="120%" style="margin-left: -20%;" alt="">
+            </div>
+            <div class="col-md-6"  style="text-align: right; margin-top: 5%;">
+                    <h2>
+                        Easily organize your daily or weekly ingredients shopping list
+                    </h2><br>
+                        <p style="font-size: 1.3em;">
+                            Add your favorite recipes or weekly meal plans to your shopping list. Reduce waste and save valuable time calculating the quantities you need 
+                        </p>
+                        <br>
+                        <h3 style="font-size: 1.3em;">
+                            You can also share your lists so others can buy the items for you!
+                        </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="vertical-align: middle;">
+                    <img src="images/logoHomeMeals.svg" style="margin-bottom: 10%; margin-top: 10%;" alt="">
+                    <p style="font-size: 1.3em;">
+                        Enjoy home cooking like a Pro and be happy eating what you love!
+                    </p>
+                    <br><br>
+                    <div style="display: none;">
+                        <p style="font-size: 1.1em;">
+                            Join for Free today 
+                        </p>
+                        <img src="images/store_appsG&A-01.png" width="30%" alt="">
+                        <img src="images/store_appsG&A-02.png" width="30%" alt="">
+                    </div>
+                    <img src="images/comingsoon.png" width="40%" alt="">
+                </div>
+                <div class="col-md-6">
+                    <img src="images/MuckUps_EnjoyCooking_Home.png" width="130%" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin: 8% 0; margin-top: 0;">
+        <div style="position: relative;">
+                <div class="container" style="text-align: center;">
+                    <img src="images/homemeals_logo_Mesa de trabajo 1.svg" width="30%" alt="">
+                    <br><br>
+                    <span style="font-weight: 200; font-size: 3.2em;">The best way <span style="color: #F7A53B; font-weight: normal;">to cook at home</span></span>
+                </div>
+        </div>
+    </section>
+
+ <!---- /////////////////////////// FOOTER ////////////////////////// ---->
+
+        <footer style="background-color: #8593a333; border-top: #F7A53B solid 1px;">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row mt-4">
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                        <h5 class="mb-2" style="font-weight: 800;">Conect with<br><span style="font-weight: 200;">
+                            Home<span style="color: #F7A53B; font-weight: 400;">Meals</span></span>
+                        </h5>
+                        <div class="mt-1">
+                        <!-- Facebook -->
+                        <a class="btn btn-floating btn-lg"><i class="lni lni-facebook-fill"></i></a>
+                        <!-- Instagram -->
+                        <a class="btn btn-floating btn-lg"><i class="lni lni-instagram-original"></i></a>
+                        <!-- Tiktok -->
+                        <a class="btn btn-floating btn-lg"><i class="lni lni-tiktok-alt"></i></a>
+                        <!-- YouTube -->
+                        <a class="btn btn-floating btn-lg"><i class="lni lni-youtube"></i></a>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                        <h5 class="mb-2" style="color: #F7A53B; font-weight: 600;">Terms</h5>
+                        <ul>
+                            <li>Privacy Policy</li>
+                            <li>Terms and conditions</li>
+                            <li>Medical disclaimer</li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                        <h5 class="mb-2" style="color: #F7A53B; font-weight: 600;">Terms</h5>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Nutritional values</li>
+                            <li>Need a hand?</li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                        <h5 class="mb-2 txtDownloadFooter" style="font-weight: normal; color: #F7A53B;">
+                            Download
+                            <br>
+                            <span style="font-weight: lighter; color: #6A7682;">
+                            Home<span style="font-weight: normal;">Meals</span> App</span>
+                        </h5>
+                        <div class="row">
+                            <div class="col-lg-6 txtDownloadFooter">
+                                <img src="images/store_appsG&A-01.png" class="downloadImgFooter" width="100%" alt="">
+                            </div>
+                            <div class="col-lg-6 txtDownloadFooter">
+                                <img src="images/store_appsG&A-02.png" class="downloadImgFooter" width="100%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-1" style="background-color: #353B41; color: white;">
+                Copyright by ©HomeMeals 2024
+            </div>
+            <!-- Copyright -->
+        </footer>
+        
+<!---- /////////////////////////// END FOOTER ////////////////////////// ----> 
+
+    <script src="homemeals.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 </html>
