@@ -1,4 +1,7 @@
-    @font-face {
+/*CSS STYLES*/
+/* /////////////////////// Estilos Globales //////////////////////// */
+
+   @font-face {
         font-family: 'suprema';
         src: url('suprema-400-regular-webfont.woff2') format('woff2'),
              url('suprema-400-regular-webfont.woff') format('woff');
@@ -25,19 +28,37 @@
         background-color: #EAECF0;
         color: #6A7682;
         font-family: suprema;
+        /* Referencia para variable de tamaño usado para medidas "em" */
         font-size: 16px;
+        /* ////////////////////////////////////////////////////////// */
     }
 
+/* ////////////////////// ///////////////////// ///////////////////// */
+
+/*///////////////////////////// GENERALES ////////////////////////////*/
+
+/* ////////////////////// ///////////////////// ///////////////////// */
+
+/*////////////////////////////// TEXTOS //////////////////////////////*/
+
     h1 {
-        font-size: 4em;
+      font-size: 4em;
     }
 
     h2 {
-        font-size: 3.5em;
-        font-weight: 100;
+      font-size: 3.5em;
+      font-weight: 100;
     }
 
-/*////////////////////////// TEXTOS /////////////////////////////*/
+    h3 {
+      font-size: 2em;
+    }
+
+  /* Aplicar Mayusculas a todas las letras */
+      .first-title{
+        text-transform: capitalize;
+    }
+  /* ///////////////////////////////////// */
 
     .title01 {
       font-size: 8em;
@@ -63,7 +84,9 @@
       padding: 0 10%;
     }
 
-/*////////////////////////// TEXTOS /////////////////////////////*/
+/* ////////////////////// ///////////////////// ///////////////////// */
+
+/*///////////////////////////// COLORES //////////////////////////////*/
 
     .colorYellowBasic {
         color: #F7A53B;
@@ -71,10 +94,6 @@
 
     .colorYellow40 {
       color: #BD7C0F;
-    }
-
-    h3 {
-        font-size: 2em;
     }
 
     a {
@@ -85,33 +104,46 @@
         color:#F7A53B;
     }
 
-    ul {
-      list-style-type: none;
+    i {
+      color: #6A7682;
     }
 
-    footer ul {
-      padding: 0;
+    i:hover {
+      color:#F7A53B;
+    }
+
+    .btn {
+      color: #6A7682;
+    }
+
+/* ////////////////////// ///////////////////// ///////////////////// */
+
+/*////////////////////////////// LISTAS //////////////////////////////*/
+
+    ul {
+      list-style-type: none;
     }
 
     li {
         margin-bottom: 1%;
     }
+    
+/* ////////////////////// ///////////////////// ///////////////////// */
+
+/*/////////////////////////////// MENU ///////////////////////////////*/
 
     .header{
-        position: relative;
-        width: 100%;
+      position: relative;
+      width: 100%;
     }
-    
-    .header-inner{
-        top: 0;
-        left: 0;
-        width:100%;
-        z-index: 99;
-        background-color: #EFEFEF;
-    }
-    
 
-/*/////////////////////MENU//////////////////////*/
+    .header-inner{
+      top: 0;
+      left: 0;
+      width:100%;
+      z-index: 99;
+      background-color: #EFEFEF;
+    }
 
     .nav-item .nav-link{
         display: block;
@@ -168,18 +200,33 @@
         font-weight: 500;
     }
 
-/*/////////////////////MENU//////////////////////*/
-    
-
-    .first-title{
-        text-transform: capitalize;
+    .navP .logo img {
+      width: 70%;
+      margin: -3px 0px 0px 0px;
     }
-    
+
+    .socialMediaMenu {
+      display: flex; 
+      align-items: center;
+    }
+
+    .langMenu {
+      display: flex; 
+      justify-content: flex-end; 
+      text-align: right; 
+      align-items: center;
+    }
+
+/* ////////////////////// ///////////////////// ///////////////////// */
+
+/* /////////////////////// CONTAINER & SECTION ////////////////////// */
+
     section{
         background-color: #EAECF0;
         padding: 4rem 0rem 4rem;
         color: #6A7682;
     }
+
     section:nth-of-type(even){
         background-color: #EAECF0;
         color: white;
@@ -190,17 +237,9 @@
         display: flex;
     }
 
-    i {
-        color: #6A7682;
-    }
+/* /////////////////////// ///////////////////// ///////////////////// */
 
-    i:hover {
-        color:#F7A53B;
-    }
-
-    .btn {
-        color: #6A7682;
-    }
+/* //////////////////////// ///// BOTONES ///// ////////////////////// */
 
     .btn-submit {
         margin: 0% 2%;
@@ -230,6 +269,9 @@
         margin-top: 2px;
     }
 
+/* /////////////////////// ///////////////////// ///////////////////// */
+
+/* //////////////////////// ////// FORMS ////// ////////////////////// */
 
     .form-control::placeholder{
         color: rgb(160, 173, 190);
@@ -250,6 +292,9 @@
         box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 #e1dbd3;
     }
 
+/* //////////////////////// ///////////////////// ////////////////////// */
+
+/* ////////////////////// ////// ACCORDEON ////// ////////////////////// */
     .accordion {
         --bs-accordion-bg: transparent;
     }
@@ -271,6 +316,10 @@
         border-bottom: 1px solid #f7a53b;
     }
 
+/* ////////////////////// ///////////////////// ////////////////////// */
+
+/* ///////////////////// ///// CONDICIONES ///// ///////////////////// */
+
     .justDesktop {
       display: initial;
     }
@@ -283,27 +332,9 @@
       display: none;
     }
 
-    .navP .logo img {
-      width: 70%;
-      margin: -3px 0px 0px 0px;
-    }
+/* ////////////////////// ///////////////////// ///////////////////// */
 
-    .txtDownloadFooter {
-      text-align: end;
-    }
-
-    .socialMediaMenu {
-      display: flex; 
-      align-items: center;
-    }
-
-    .langMenu {
-      display: flex; 
-      justify-content: flex-end; 
-      text-align: right; 
-      align-items: center;
-    }
-
+/*/////////////////////////// - About Us - ///////////////////////////*/
     .imgAboutDec01 {
       position: absolute;
       top: -250px;
@@ -316,6 +347,9 @@
       right: 0;
       width: 9%;
     }
+/*//////////////////////// /////////////////////// /////////////////////*/
+
+/*///////////////////////////// - Combine - ////////////////////////////*/
 
     .imgDec01Combine {
       position: absolute; 
@@ -326,6 +360,10 @@
 
     .textHeadCombine {
       padding-right: 35%;
+    }
+
+    .img01HeaderCombine {
+      width: 80%;
     }
 
     .stepsCombine {
@@ -339,176 +377,259 @@
       width: 100%;
     }
 
-/*///////////////////////////// - Carousel - /////////////////////////////*/
+/*/////////////////////// /////////////////////// //////////////////////*/
 
-/*///////////////////////////// - Carousel - /////////////////////////////*/
+/*/////////////////////////// - How it Works - /////////////////////////*/
+
+    .headerHowitWorksIMG {
+      background-image: url(images/bannerHowItWorks.png);
+      background-size: contain; 
+      background-position: right; 
+      background-repeat: no-repeat;
+    }
+
+    .contentHeaderHowitWorks {
+      align-content: center;
+      vertical-align: middle;
+      padding: 5% 0%;
+      padding-right: 5%;
+    }
+
+
+/*/////////////////// ///////////////////////////// ////////////////////*/
+
+/*/////////////////////////// - Carousel - /////////////////////////////*/
+
+/*/////////////////// ///////////////////////////// ////////////////////*/
+
+/*//////////////////////////// - FOOTER - //////////////////////////////*/
 
     .imgFirmaHomeMeals {
       width: 30%;
+    }
+
+    footer ul {
+      padding: 0;
+    }
+
+    .txtDownloadFooter {
+      text-align: end;
     }
 
     .downloadImgFooter {
       padding: 2% 0;
     }
 
-/*Laptop pequeña*/
-  @media screen and (max-width: 1200px) {
-    .txt_Subtitle {
-      font-size: 1.7em;
-    }
+/*/////////////////// ///////////////////////////// ////////////////////*/
 
-    .title01 {
-      font-size: 5em;
-      font-weight: 100;
-    }
+/*/////////////////// --------- ---------- --------- ///////////////////*/
+/*/////////////////// --------- RESPONSIVE --------- ///////////////////*/
+/*/////////////////// --------- --styles-- --------- ///////////////////*/
+/*/////////////////// --------- ---------- --------- ///////////////////*/
 
-    .title02 {
-      font-size: 2.7em;
-    }
+/*/////////////////////  ------LAPTOP SMALL------  /////////////////////*/
 
-    .justNotebook {
-      display: initial;
-    }
+      @media screen and (max-width: 1200px) {
+        .txt_Subtitle {
+          font-size: 1.7em;
+        }
 
-    .justMobile {
-      display: none;
-    }
-  }
+        .title01 {
+          font-size: 5em;
+          font-weight: 100;
+        }
 
-/*IPAD & Tablet*/
-  @media screen and (max-width: 990px) {
-    .txt_Subtitle {
-      font-size: 1.7em;
-    }
+        .title02 {
+          font-size: 2.7em;
+        }
 
-    .justDesktop {
-      display: none;
-    }
+        .justNotebook {
+          display: initial;
+        }
 
-    .justNotebook {
-      display: none;
-    }
+        .justMobile {
+          display: none;
+        }
 
-    .title01 {
-      font-size: 5em;
-      font-weight: 100;
-    }
+        .title01Combine {
+          font-size: 5em;
+        }
 
-    .title02 {
-      font-size: 2.7em;
-    }
+        .img01HeaderCombine {
+          width: 100%;
+        }
 
-    .justMobile {
-      display: none;
-    }
+        .imgFirmaHomeMeals {
+          width: 40%;
+        }
+      }
 
-    .txtDownloadFooter {
-      text-align: start;
-    }
+/*/////////////////// ///////////////////////////// ////////////////////*/
 
-    .imgAboutDec01 {
-      top: -100px;
-      width: 15%;
-    }
+/*////////////////////  ------IPAD & Tablet------  /////////////////////*/
 
-    .imgAboutDec02 {
-      width: 13%;
-    }
+      @media screen and (max-width: 990px) {
+        .txt_Subtitle {
+          font-size: 1.7em;
+        }
 
-  }
+        .justDesktop {
+          display: none;
+        }
 
-/*Celular*/
-@media screen and (max-width: 590px) {
-  .navP {
-    justify-content: center;
-    text-align: center;
-  }
+        .justNotebook {
+          display: none;
+        }
 
-  .txt_Subtitle {
-    font-size: 1.3em;
-  }
+        .title01 {
+          font-size: 5em;
+          font-weight: 100;
+        }
 
-  .socialMediaMenu {
-    justify-content: center;
-  }
+        .title02 {
+          font-size: 2.7em;
+        }
 
-  .langMenu {
-    justify-content: center;
-  }
+        .justMobile {
+          display: none;
+        }
 
-  .navP img {
-    padding-left: 5%;
-    margin-bottom: 3% !important;
-  }
+        .txtDownloadFooter {
+          text-align: start;
+        }
 
-  .title02 {
-    font-size: 2.3em;
-    line-height: normal;
-  }
+        .imgAboutDec01 {
+          top: -100px;
+          width: 15%;
+        }
 
-  .justMobile {
-    display: initial;
-  }
+        .imgAboutDec02 {
+          width: 13%;
+        }
 
-  .txtDownloadFooter {
-    text-align: center;
-  }
+        .title01Combine {
+          font-size: 3.5em;
+        }
 
-  .imgAboutDec01 {
-    top: -80px;
-    width: 15%;
-  }
+        .title02combine {
+          font-size: 1.8em;
+          line-height: 1.1em;
+        }
 
-  .imgAboutDec02 {
-    top: -130px;
-    width: 19%;
-  }
+        .imgCombinationCombine02 {
+          width: 110%;
+        }
 
-  .downloadImgFooter {
-    width: 50%;
-  }
+      }
 
-  .imgFirmaHomeMeals {
-    width: 50%;
-  }
+/*/////////////////// ///////////////////////////// ////////////////////*/
 
-  .title01Combine {
-    font-size: 2em;
-  }
+/*////////////////////  ------ Cellphone ------  //////////////////////*/
 
-  .imgDec01Combine {
-    top: 385px;
-    width: 48%;
-  }
+      @media screen and (max-width: 590px) {
+        .navP {
+          justify-content: center;
+          text-align: center;
+        }
 
-  .textHeadCombine {
-    padding-right: 45%;
-  }
+        .txt_Subtitle {
+          font-size: 1.3em;
+        }
 
-  .stepsCombine {
-    flex-wrap: wrap;
-  }
+        .socialMediaMenu {
+          justify-content: center;
+        }
 
-  .stepsCombine img {
-    width: 25%;
-  }
+        .langMenu {
+          justify-content: center;
+        }
 
-  .stepsCombine h2 {
-      font-size: 2.2em;
-      line-height: 1em;
-      margin-top: 3%;
-  }
+        .navP img {
+          padding-left: 5%;
+          margin-bottom: 3% !important;
+        }
 
-  .imgCombinationCombine02 {
-    width: 80%;
-  }
+        .title02 {
+          font-size: 2.3em;
+          line-height: normal;
+        }
 
-  .title02combine {
-    font-size: 2em;
-  }
+        .justMobile {
+          display: initial;
+        }
 
-  .txtNutInf {
-    padding: 0%;
-  }
+        .txtDownloadFooter {
+          text-align: center;
+        }
 
-}
+        .imgAboutDec01 {
+          top: -80px;
+          width: 15%;
+        }
+
+        .imgAboutDec02 {
+          top: -130px;
+          width: 19%;
+        }
+
+        .downloadImgFooter {
+          width: 50%;
+        }
+
+        .imgFirmaHomeMeals {
+          width: 50%;
+        }
+
+        .title01Combine {
+          font-size: 2em;
+        }
+
+        .imgDec01Combine {
+          top: 385px;
+          width: 48%;
+        }
+
+        .textHeadCombine {
+          padding-right: 45%;
+        }
+
+        .stepsCombine {
+          flex-wrap: wrap;
+        }
+
+        .stepsCombine img {
+          width: 25%;
+        }
+
+        .stepsCombine h2 {
+            font-size: 2.2em;
+            line-height: 1em;
+            margin-top: 3%;
+        }
+
+        .imgCombinationCombine02 {
+          width: 90%;
+        }
+
+        .title02combine {
+          font-size: 2em;
+        }
+
+        .txtNutInf {
+          padding: 0%;
+        }
+
+        .headerHowitWorksIMG {
+          background-size: 158%;
+          background-position: top right;
+        }
+
+        .contentHeaderHowitWorks {
+          text-align: center;
+          margin-top: 50%;
+          padding: 0;
+        }
+
+      }
+
+/*/////////////////// ///////////////////////////// ////////////////////*/
