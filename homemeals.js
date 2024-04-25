@@ -1,4 +1,91 @@
-const textElement = document.getElementById("text");
+
+
+
+/////////////////////////////////// Slider combinaciones ////////////////////////////////////
+
+var TrandingSlider = new Swiper('.tranding-slider', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: '1',
+      spaceBetween: 10,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 1,
+        depth: 200,
+        modifier: 1,
+      },
+      breakpoints: {
+
+        950: {
+          slidesPerView: '2.5',
+          spaceBetween: 0,
+        },
+        1200: {
+          slidesPerView: '2.41',
+          spaceBetween: 5,
+        },
+        375: {
+          slidesPerView: '1',
+          modifier: 1,
+          spaceBetween: 10,
+          depth: 220,
+        },
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+});
+
+      var TrandingSlider = new Swiper('.tranding-slider2', {
+
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: '1',
+            spaceBetween: 10,
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 1,
+              depth: 200,
+              modifier: 1,
+            },
+            breakpoints: {
+
+              950: {
+                slidesPerView: '2.5',
+                spaceBetween: 0,
+              },
+              1200: {
+                slidesPerView: '2.41',
+                spaceBetween: 5,
+              },
+              375: {
+                slidesPerView: '1',
+                modifier: 1,
+                spaceBetween: 10,
+                depth: 220,
+              },
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }
+
+      });
+
+      const textElement = document.getElementById("text");
 const textToType = textElement.innerText;
 const wordsToType = [
   "Family",
@@ -39,52 +126,3 @@ function eraseText() {
 }
 
 typeText();
-
-
-/////////////////////////////////// Slider combinaciones ////////////////////////////////////
-
-/**
-  Swiper:
-  https://swiperjs.com/
-**/
-const swiper = new Swiper(".swiperCarousel", {
-  slidesPerView: 3,
-  centeredSlides: true,
-  spaceBetween: 10,
-  keyboard: {
-    enabled: true,
-  },
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-const slides = document.getElementsByClassName("swiper-slide");
-for (const slide of slides) {
-  slide.addEventListener("click", () => {
-    const { className } = slide;
-    if (className.includes("swiper-slide-next")) {
-      swiper.slideNext();
-    } else if (className.includes("swiper-slide-prev")) {
-      swiper.slidePrev();
-    }
-  });
-}
-
-function resizeTextToFit() {
-  const quoteEls = document.getElementsByClassName('quote');
-  for (const el of quoteEls) {
-    el.style.width = el.offsetWidth;
-    el.style.height = el.offsetHeight;
-  }
-  textFit(quoteEls, { maxFontSize: 14 });
-}
-resizeTextToFit();
-addEventListener("resize", (event) => {
-  resizeTextToFit();
-});

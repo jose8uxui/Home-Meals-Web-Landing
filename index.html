@@ -7,19 +7,18 @@
 
     <!--- CSS3 SCRIPTS --->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+
     <!-- Lineicons CSS -->
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
 
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
 
-    <!---////////////////////////////////////////////////////--->
+  <!---////////////////////////////////////////////////////--->
     <!------------------------ HEADER -------------------------->
 
     <header class="header" style="box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.059);">
@@ -49,27 +48,30 @@
             </div>
             <div class="container px-lg-5">
                 <nav class="navbar navbar-expand-lg my-navbar navP">
-                    <a class="navbar-brand" href="index.html">
-                        <span class="logo">
-                            <img src="images/homemeals_logo_Mesa de trabajo 1.svg" class="img-fluid">
-                        </span>
-                    </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fas fa-bars" style="margin:5px 0px 0px 0px;"></i></span>
-                    </button>
-                
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: end;">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">About us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Combine Recipes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">How it works?</a>
-                            </li>
-                        </ul>
+                    <div class="container-fluid">
+                            
+                            <a class="navbar-brand" href="index.html">
+                                <span class="logo">
+                                    <img src="images/homemeals_logo_Mesa de trabajo 1.svg" class="img-fluid">
+                                </span>
+                            </a>
+                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: end;">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="aboutus.html">About us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="combinerecipes.html">Combine Recipes</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="howitworks.html">How it works?</a>
+                                    </li>
+                                </ul>
+                            </div>
                     </div>
                 </nav>
             </div>
@@ -86,21 +88,22 @@
 
         <div class="container" class="first_Section">
             <div class="row">
-                <div class="col-md-4" style="align-content: center; vertical-align: middle;">
-                    <h1>
+                <div class="col-lg-4 colTitleHome" style="align-content: center; vertical-align: middle;">
+                    <h1 class="firstTitleHome">
                         Easy home meals for your 
                         <span class="head" style="color: #F7A53B; font-weight: 700;">
                             <span class="text" id="text"></span>
                         </span>
                     </h1>
                     <br>
-                    <p style="font-size: 1.3em;">
+                    <p class="txt">
                         HomeMeals helps you discover thousands of easy ways to 
                         combine your favorite proteins, sides, and salads. 
                         You'll love it!.
                     </p>
+                    <br class="justMobile">
                 </div>
-                <div class="col-md-8">
+                <div class="col-lg-8 colTitleHome">
                     <img src="images/video1_homeMeals_Landing.jpg" width="100%" alt="">
                 </div>
             </div>
@@ -117,7 +120,7 @@
 
     <section>
         <div class="container second_Section" style="text-align: center;">
-            <h2>
+            <h2 class="title02Home">
                     Learn to cook easily
                 <br>
                 <span class="titleBoldYellow">
@@ -126,8 +129,8 @@
             </h2>
         </div>
         <br>
-        <div class="container" style="padding: 0 20%; text-align: center; margin-bottom: 5%;">
-            <p style="font-size: 1.3em;">
+        <div class="container txtLearnToCookHome">
+            <p class="txt">
                 Enjoy cooking at home with step-by-step video and cook every kind of meal, 
                 from breakfasts, snacks, lunches, and dinners. 
                 <br>
@@ -136,13 +139,14 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4" style="display: flex; text-align: right; align-items: center; vertical-align: middle;">
+                <div class="col-md-4 learnHomeimg learnHomeimg01">
                     <img src="images/recipesoftheday.png" width="100%" alt="">
                 </div>
-                <div class="col-md-4" style="text-align: center;">
-                    <img src="images/MockUpHome01.png" width="70%" alt="">
+                <div class="col-md-4 learnHomeimg02">
+                    <img src="images/MockUpHome01.png" class="mockUpHome01_Dsk" alt="">
+                    <img src="images/MockUpHome01Mobile.png" class="mockUpHome01_Mobile" alt="">
                 </div>
-                <div class="col-md-4" style="display: flex; text-align: left; align-items: center; vertical-align: middle;">
+                <div class="col-md-4 learnHomeimg learnHomeimg03">
                     <div style="text-align: center;">
                         <img src="images/stepsHome.png" width="90%" alt="">
                         <img src="images/videoStepsHome.png" width="100%" alt="">
@@ -161,245 +165,335 @@
         <section>
             <div class="container thirth_Section" >
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-8 combine01">
                         <div>
-                            <h2>
+                            <h2 class="title02Home">
                                 Explore thousands of ways to
                                 <span class="titleBoldYellow">
                                     combine the proteins, salads, sides....
                                 </span>
                                 you love
                             </h2>
+                            <br>
+                            <h3 class="txt" style="color: #BD7C0F; text-align: center;">
+                                Our Chef’s do the work for you
+                            </h3>
                         </div>
+
+                        <!----////////////////////  CAROUSEL  //////////////////////---->
+                        
+                            <div class="container" style="margin-top: 5%;">
+
+                                <div class="containerC">
+                                    <div class="swiper tranding-slider">
+                                        <div class="swiper-wrapper">
+                                                            
+                                            <!-- Slide-01-start -->
+                                                <div class="swiper-slide tranding-slide">
+                                                    <div class="tranding-slide-img">
+                                                        <img src="images/combine01home.png" alt="Tranding">
+                                                    </div>
+                                                </div>
+                                            <!-- Slide-01---end -->
+                                            <!-- Slide-02-start -->
+                                                <div class="swiper-slide tranding-slide">
+                                                    <div class="tranding-slide-img">
+                                                        <img src="images/combine02home.png" alt="Tranding">
+                                                    </div>
+                                                </div>
+                                            <!-- Slide-02---end -->
+                                            <!-- Slide-03-start -->
+                                                <div class="swiper-slide tranding-slide">
+                                                    <div class="tranding-slide-img">
+                                                        <img src="images/combine03home.png" alt="Tranding">
+                                                    </div>
+                                                </div>
+                                            <!-- Slide-03---end -->
+                                            <!-- Slide-04-start -->
+                                                <div class="swiper-slide tranding-slide">
+                                                    <div class="tranding-slide-img">
+                                                        <img src="images/combine04home.png" alt="Tranding">
+                                                    </div>
+                                                </div>
+                                            <!-- Slide-04---end -->
+                                            <!-- Slide-05-start -->
+                                            <div class="swiper-slide tranding-slide">
+                                                <div class="tranding-slide-img">
+                                                    <img src="images/combine05home.png" alt="Tranding">
+                                                </div>
+                                            </div>
+                                            <!-- Slide-05---end -->       
+                                        </div>
+                                        <div class="tranding-slider-control">
+
+                                                <div class="swiper-button-prev slider-arrow">
+                                                    <ion-icon name="arrow-back-outline"></ion-icon>
+                                                </div>
+
+                                                <div class="swiper-button-next slider-arrow">
+                                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                                </div>
+                                                
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                        </div>
+                                                    
+                                </div>                 
+
+                            </div>
+
+                        <!----//////////////////  end CAROUSEL  ////////////////////---->
+
                         <div class="container" style="padding: 0 15%; text-align: center; margin-bottom: 5%;">
-
-                    <!----////////////////////  CAROUSEL  //////////////////////---->
-
-                    <!----//////////////////  end CAROUSEL  ////////////////////---->
-
                         <br>
-                        <h3>
-                            Our Chef’s do the work for you
-                        </h3>
-                        <br>
-                        <p style="font-size: 1.3em;">
+                        <p class="txt">
                             Choose your favorite protein, side dish, or salad, and we'll show you personalized 
                             dish combination ideas, or built your own combinations and visualize them 
                             in real time
                         </p>
                         <br>
-                        <button type="submit" class="btn btn-primary btn-submit" style="margin: 0% 2%; padding: 2.5% 8%;">
+                        <button type="submit" class="btn btn-primary btn-submit botones txt">
                             Learn more
                         </button>
                     </div>
                 </div>
-                <div class="col-md-4" style="padding: 0;">
-                    <img src="images/mockUp02Home.png" width="100%" style="width: 500px; margin-left: -15%;" alt="">
+                <div class="col-md-4 combine02" style="padding: 0;">
+                    <img src="images/mockUp02Home.png" class="imgCombineProteinsHome" alt="">
                 </div>
             </div>
         </div>
     </section>
 
+    <br class="justDesktop"><br class="justDesktop">
     <!------------------- COMBINE PROTEINS --------------------->
     <!---////////////////////////////////////////////////////--->
+
+    <div style="position: relative;">
+        <img src="images/DecoHome01.png" alt="" class="imgHomeDec01">
+    </div>
 
     <!---////////////////////////////////////////////////////--->
     <!------------------- COMBINE PROTEINS --------------------->
 
     <section class="fourSection">
         <div class="container" style="text-align: center;">
-            <h2 style="padding: 0 20%;">
+            <h2 class="title02Home">
                 Simplify your week:
                 <span class="titleBoldYellow">
-                    Smart Meal Planning
+                    Smart<br class="justDesktop"> Meal Planning
                 </span>
                 in minutes
             </h2>
             <br><br>
             <div class="row">
-                <di class="col-md-4">
+                <di class="col-4 mealplanningIMG">
                     <img src="images/img01_Sect04.png" width="100%" alt="">
                 </di>
-                <di class="col-md-4">
+                <di class="col-4 mealplanningIMG">
                     <img src="images/imag02_sec04.png" width="100%" alt="">
                 </di>
-                <di class="col-md-4">
+                <di class="col-4 mealplanningIMG2">
                     <img src="images/imag03_sec04.png" width="100%" alt="">
                 </di>
             </div>
             <div class="row">
                 <div class="col-md-6" style="margin-top: -8%;">
-                    <img src="images/CalendarHome.png" width="100%" alt="">
+                    <img src="images/CalendarHome.png" class="calendarHome" alt="">
                 </div>
-                <div class="col-md-6 d-flex" style="font-size: 1.3em; text-align: left; align-items: center; vertical-align: middle;">
+                <div class="col-md-6 txt" style="text-align: left; align-items: center; vertical-align: middle;">
+                    <br class="justDesktop"><br class="justDesktop">
                     <p>
-                        Manual Option: Create meal plans with your favorite dishes, for up to 3 weeks
+                        <span class="titleBoldYellow">Manual Option:</span> Create meal plans with your favorite dishes, for up to 3 weeks
                     </p>
                     <p>
-                        Assisted Option: Answer a few simple questions and get a meal plan for up to 3 weeks, in just minutes
+                        <span class="titleBoldYellow">Assisted Option:</span> Answer a few simple questions and get a meal plan for up to 3 weeks, in just minutes
                     </p>
                 </div>
             </div>
-            <h3>
-                Save time and master your weekly menus with us!
+            <h3 class="txt" style="color: #BD7C0F;">
+                Save time and master your<br class="justDesktop"> weekly menus with us!
             </h3>
+            <br class="justMobile"><br class="justMobile"><br class="justMobile">
         </div>
     </section>
 
     <section style="background-color: #F7A53B;">
-        <div class="container">
-            <p>
+        <div class="container mailPDF_Home" style="position: relative;">
+            <p class="txtPDF_MealPlan">
                 We have a <strong>FREE</strong> weekly menu for you
             </p>
-            <button>
+            <button class="txt botones">
                 Download now!
             </button>
-            <img src="images/PlanMealsGratisFREE.png" width="30%" style="">
+            <img src="images/PlanMealsGratisFREE.png" class="PDF_MealPlan">
         </div>
     </section>
 
     <section>
         <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <img src="images/muckUpMealPlanner List_Home.png" width="120%" style="margin-left: -20%;" alt="">
+            <div class="col-lg-6">
+                <img src="images/muckUpMealPlanner List_Home.png" class="mockUpListHome" alt="">
             </div>
-            <div class="col-md-6"  style="text-align: right; margin-top: 5%;">
-                    <h2>
-                        Easily organize your daily or weekly ingredients shopping list
+            <div class="col-lg-6"  style="text-align: right; margin-top: 5%;">
+                    <h2 class="title02Home">
+                        <span class="titleBoldYellow">Easily organize</span> your daily or weekly ingredients <span class="titleBoldYellow">shopping list</span>
                     </h2><br>
-                        <p style="font-size: 1.3em;">
+                        <p class="txt">
                             Add your favorite recipes or weekly meal plans to your shopping list. Reduce waste and save valuable time calculating the quantities you need 
                         </p>
                         <br>
-                        <h3 style="font-size: 1.3em;">
-                            You can also share your lists so others can buy the items for you!
+                        <h3 class="txt" style="color: #BD7C0F;">
+                            You can also share your lists so others<br class="justDesktop"> can buy the items for you!
                         </h3>
                 </div>
             </div>
         </div>
     </section>
 
+    <div style="position: relative;">
+        <img src="images/DecoHome02.png" alt="" class="imgHomeDec02">
+    </div>
+
     <section>
-        <div class="container">
+        <div class="container enjoyDownload">
             <div class="row">
-                <div class="col-md-6" style="vertical-align: middle;">
-                    <img src="images/logoHomeMeals.svg" style="margin-bottom: 10%; margin-top: 10%;" alt="">
-                    <p style="font-size: 1.3em;">
-                        Enjoy home cooking like a Pro and be happy eating what you love!
+                <div class="col-md-7" style="vertical-align: middle;">
+                    <img src="images/logoHomeMeals.svg" class="logoEnjoyHome logoHome03" alt="">
+                    <br>
+                    <p class="title02Home" style="font-weight: 100;">
+                        Enjoy home cooking like a Pro and <span class="titleBoldYellow">be happy eating what you love!</span>
                     </p>
-                    <br><br>
+                    <br>
                     <div style="display: none;">
-                        <p style="font-size: 1.1em;">
+                        <p class="txt">
                             Join for Free today 
                         </p>
                         <img src="images/store_appsG&A-01.png" width="30%" alt="">
                         <img src="images/store_appsG&A-02.png" width="30%" alt="">
                     </div>
-                    <img src="images/comingsoon.png" width="40%" alt="">
+                    <img src="images/comingsoon.png" class="comingSoonImgHome" alt="">
                 </div>
                 <div class="col-md-6">
-                    <img src="images/MuckUps_EnjoyCooking_Home.png" width="100%" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <section style="margin: 8% 0; margin-top: 0;">
+    <div style="position: relative; margin: 0; padding: 0%;">
+        <img src="images/MuckUps_EnjoyCooking_Home.png" class="imgEnjoyHome02" alt="">
+    </div>
+
+    <div style="position: relative;">
+        <img src="images/DecoHome03.png" alt="" class="imgHomeDec03">
+    </div>
+
+    <section id="firma">
         <div style="position: relative;">
                 <div class="container" style="text-align: center;">
-                    <img src="images/homemeals_logo_Mesa de trabajo 1.svg" width="30%" alt="">
+                    <img src="images/homemeals_logo_Mesa de trabajo 1.svg" width="30%" class="imgFirmaHomeMeals" alt="">
                     <br><br>
-                    <span style="font-weight: 200; font-size: 3.2em;">The best way <span style="color: #F7A53B; font-weight: normal;">to cook at home</span></span>
+                    <span class="title02" style="font-weight: lighter;">The best way <span style="color: #F7A53B; font-weight: normal;">to cook at home</span></span>
                 </div>
         </div>
     </section>
 
- <!---- /////////////////////////// FOOTER ////////////////////////// ---->
+    <!----///////////////////////////////////////////////////////////////---->      
+    <!---- /////////////////////////// FOOTER ////////////////////////// ---->
 
-        <footer style="background-color: #8593a333; border-top: #F7A53B solid 1px;">
-            <!-- Grid container -->
-            <div class="container p-4">
-                <!--Grid row-->
-                <div class="row mt-4">
+    <footer style="background-color: #8593a333; border-top: #F7A53B solid 1px;">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
 
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-                        <h5 class="mb-2" style="font-weight: 800;">Conect with<br><span style="font-weight: 200;">
-                            Home<span style="color: #F7A53B; font-weight: 400;">Meals</span></span>
-                        </h5>
-                        <div class="mt-1">
-                        <!-- Facebook -->
-                        <a class="btn btn-floating btn-lg"><i class="lni lni-facebook-fill"></i></a>
-                        <!-- Instagram -->
-                        <a class="btn btn-floating btn-lg"><i class="lni lni-instagram-original"></i></a>
-                        <!-- Tiktok -->
-                        <a class="btn btn-floating btn-lg"><i class="lni lni-tiktok-alt"></i></a>
-                        <!-- YouTube -->
-                        <a class="btn btn-floating btn-lg"><i class="lni lni-youtube"></i></a>
-                        </div>
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-2" style="font-weight: 800;">Conect with<br><span style="font-weight: 200;">
+                        Home<span style="color: #F7A53B; font-weight: 400;">Meals</span></span>
+                    </h5>
+                    <div class="mt-1">
+                    <!-- Facebook -->
+                    <a class="btn btn-floating btn-lg"><i class="lni lni-facebook-fill"></i></a>
+                    <!-- Instagram -->
+                    <a class="btn btn-floating btn-lg"><i class="lni lni-instagram-original"></i></a>
+                    <!-- Tiktok -->
+                    <a class="btn btn-floating btn-lg"><i class="lni lni-tiktok-alt"></i></a>
+                    <!-- YouTube -->
+                    <a class="btn btn-floating btn-lg"><i class="lni lni-youtube"></i></a>
                     </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-                        <h5 class="mb-2" style="color: #F7A53B; font-weight: 600;">Terms</h5>
-                        <ul>
-                            <li>Privacy Policy</li>
-                            <li>Terms and conditions</li>
-                            <li>Medical disclaimer</li>
-                        </ul>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-                        <h5 class="mb-2" style="color: #F7A53B; font-weight: 600;">Terms</h5>
-                        <ul>
-                            <li>About Us</li>
-                            <li>Nutritional values</li>
-                            <li>Need a hand?</li>
-                        </ul>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
-                        <h5 class="mb-2 txtDownloadFooter" style="font-weight: normal; color: #F7A53B;">
-                            Download
-                            <br>
-                            <span style="font-weight: lighter; color: #6A7682;">
-                            Home<span style="font-weight: normal;">Meals</span> App</span>
-                        </h5>
-                        <div class="row">
-                            <div class="col-lg-6 txtDownloadFooter">
-                                <img src="images/store_appsG&A-01.png" class="downloadImgFooter" width="100%" alt="">
-                            </div>
-                            <div class="col-lg-6 txtDownloadFooter">
-                                <img src="images/store_appsG&A-02.png" class="downloadImgFooter" width="100%" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
                 </div>
-                <!--Grid row-->
-            </div>
-            <!-- Grid container -->
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-2" style="color: #F7A53B; font-weight: 600;">Terms</h5>
+                    <ul>
+                        <li><a href="https://www.iubenda.com/privacy-policy/18133946" style="text-decoration: none; color: #6A7682;">Privacy Policy</a></li>
+                        <li><a href="https://www.iubenda.com/condiciones-de-uso/18133946" style="text-decoration: none; color: #6A7682;">Terms and conditions</a></li>
+                        <li><a href="#" style="text-decoration: none; color: #6A7682;">Medical disclaimer</a></li>
+                    </ul>
+                </div>
+                <!--Grid column-->
 
-            <!-- Copyright -->
-            <div class="text-center p-1" style="background-color: #353B41; color: white;">
-                Copyright by ©HomeMeals 2024
-            </div>
-            <!-- Copyright -->
-        </footer>
-        
-<!---- /////////////////////////// END FOOTER ////////////////////////// ----> 
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-2" style="color: #F7A53B; font-weight: 600;">Terms</h5>
+                    <ul>
+                        <li><a href="https://www.iubenda.com/privacy-policy/18133946/cookie-policy" style="text-decoration: none; color: #6A7682;">Cookies Policy</a></li>
+                        <li><a href="nutritionalvalues.html" style="text-decoration: none; color: #6A7682;">Nutritional values</a></li>
+                        <li><a href="needahand.html" style="text-decoration: none; color: #6A7682;">Need a hand?</a></li>
+                    </ul>
+                </div>
+                <!--Grid column-->
 
-    <script src="homemeals.js"></script>
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-2 txtDownloadFooter" style="font-weight: normal; color: #F7A53B;">
+                        Download
+                        <br>
+                        <span style="font-weight: lighter; color: #6A7682;">
+                        Home<span style="font-weight: normal;">Meals</span> App</span>
+                    </h5>
+                    <div class="row">
+                    <!---
+                        <div class="col-lg-6 txtDownloadFooter">
+                            <img src="images/store_appsG&A-01.png" class="downloadImgFooter" width="100%" alt="">
+                        </div>
+                        <div class="col-lg-6 txtDownloadFooter">
+                            <img src="images/store_appsG&A-02.png" class="downloadImgFooter" width="100%" alt="">
+                        </div>
+                    --->
+                        <div class="comimgsoonFooter">
+                            <img src="images/comingsoon.svg" width="100%" alt="" style="max-width: 180px;">
+                        </div>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-1" style="background-color: #353B41; color: white;">
+            Copyright by ©HomeMeals 2024
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+<!---- /////////////////////////// FOOTER ////////////////////////// ---->
+<!----///////////////////////////////////////////////////////////////---->
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+    <script src="homemeals.js"></script>
 
 </body>
 </html>

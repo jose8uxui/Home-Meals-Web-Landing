@@ -4,6 +4,7 @@
    @font-face {
         font-family: 'suprema';
         src: url('suprema-400-regular-webfont.woff2') format('woff2'),
+             url('fonts/suprema-400-regular-webfont.woff') format('woff'),
              url('suprema-400-regular-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
@@ -32,10 +33,6 @@
         font-size: 16px;
         /* ////////////////////////////////////////////////////////// */
     }
-
-/* ////////////////////// ///////////////////// ///////////////////// */
-
-/*///////////////////////////// GENERALES ////////////////////////////*/
 
 /* ////////////////////// ///////////////////// ///////////////////// */
 
@@ -72,6 +69,10 @@
       font-size: 1.5em;
     }
 
+    .txt {
+      font-size: 1.5em;
+    }
+
     .text_Paragraph {
       font-size: 1.2em;
     }
@@ -90,6 +91,11 @@
 
     .colorYellowBasic {
         color: #F7A53B;
+    }
+
+    .titleBoldYellow {
+      color: #F7A53B;
+      font-weight: bolder;
     }
 
     .colorYellow40 {
@@ -377,6 +383,11 @@
       width: 100%;
     }
 
+    .enjoyDownload {
+      text-align: left;
+      margin-top: 19%;
+    }
+
 /*/////////////////////// /////////////////////// //////////////////////*/
 
 /*/////////////////////////// - How it Works - /////////////////////////*/
@@ -395,10 +406,408 @@
       padding-right: 5%;
     }
 
+    .titleHiW_Header {
+      margin-top: 4%;
+    }
+
+    .txtHiW_Header {
+      font-size: 1.3em;
+      margin-top: 0;
+    }
+
+
+/*/////////////////// ///////////////////////////// ////////////////////*/
+
+/*///////////////////////////// - Home - ///////////////////////////////*/
+
+    .firstTitleHome {
+      font-size: 4em;
+    }
+
+    .imgHomeDec02 {
+      position: absolute;
+      right: 0;
+      top: -230px;
+      width: 30%;
+    }
+
+    .imgHomeDec01 {
+      position: absolute;
+      left: 0;
+      top: -160px;
+      width: 15%;
+      max-width: 180px;
+    }
+
+    .logoHome03 {
+      width: 100%;
+      margin-bottom: 20%;
+      margin-top: 0;
+    }
+
+    .imgHomeDec03 {
+      position: absolute;
+      left: 0;
+      top: 130px;
+      width: 16%;
+    }
+
+    .PDF_MealPlan {
+      position: absolute;
+      top: -120px;
+      right: -5%;
+      width: 30%;
+    }
+
+    .txtPDF_MealPlan {
+      font-size: 2.5em;
+      color: white;
+      font-weight: 100;
+      line-height: normal;
+    }
+
+    .imgCombineProteinsHome {
+      width: 500px; 
+      margin-left: -15%;
+      width: 100%;
+    }
+
+    .calendarHome {
+      width: 100%;
+    }
+
+    .mockUpHome01_Dsk {
+      width: 70%;
+      display: initial;
+    }
+
+    .mockUpHome01_Mobile {
+      display: none;
+    }
 
 /*/////////////////// ///////////////////////////// ////////////////////*/
 
 /*/////////////////////////// - Carousel - /////////////////////////////*/
+
+    .containerC {
+      max-width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #tranding {
+      padding: 0rem 0;
+    }
+
+        @media (max-width:1440px) {
+          #tranding {
+            padding: 7rem 0;
+          }
+        }
+
+        @media (max-width:1200px) {
+          .containerC {
+            max-width: 90%;
+            margin: 0 auto;
+            text-align: center;
+          }
+        }
+    
+    #tranding .tranding-slider {
+      height: 1rem;
+      padding: 1rem;
+      position: relative;
+    }
+    
+        @media (max-width:500px) {
+          #tranding .tranding-slider {
+            height: 45rem;
+          }
+        }
+    
+    .tranding-slide {
+      width: 12rem;
+      height: 5rem;
+      position: relative;
+      text-align: center;
+    }
+
+    .tranding-slide2 {
+      width: 12rem;
+      height: 5rem;
+      position: relative;
+      text-align: center;
+    }
+    
+    @media (max-width:300px) {
+      .tranding-slide {
+        width: 15rem !important;
+        height: 5rem !important;
+      }
+      .tranding-slide .tranding-slide-img img {
+        width: 15rem !important;
+        height: 100% !important;
+      }
+    }
+
+    .tranding-slide .tranding-slide-img img {
+      width: 13rem;
+      height: 100%;
+      border-radius: 2rem;
+      object-fit:contain;
+    }
+    
+    .swiper-slide-shadow-left,
+    .swiper-slide-shadow-right {
+      display: none;
+    }
+    
+    .tranding-slider-control {
+      position: relative;
+      bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .tranding-slider-control .swiper-button-next {
+      left: 18% !important;
+      transform: translateX(18%) !important;
+    }
+    
+    @media (max-width:990px) {
+      .tranding-slider-control .swiper-button-next {
+        left: 70% !important;
+        transform: translateX(-70%) !important;
+      }
+    }
+    
+    @media (max-width:450px) {
+      .tranding-slider-control .swiper-button-next {
+        left: 80% !important;
+        transform: translateX(-80%) !important;
+      }
+    }
+    
+    @media (max-width:990px) {
+      .tranding-slider-control .swiper-button-prev {
+        left: 30% !important;
+        transform: translateX(-30%) !important;
+      }
+    }
+    
+    @media (max-width:450px) {
+      .tranding-slider-control .swiper-button-prev {
+        left: 20% !important;
+        transform: translateX(-20%) !important;
+      }
+    }
+    
+    .tranding-slider-control .slider-arrow {
+      background: var(--white);
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      left: 2%;
+      transform: translateX(-42%);
+      filter: drop-shadow(0px 8px 24px rgba(67, 76, 98, 0.829));
+    }
+    
+    .tranding-slider-control .slider-arrow ion-icon {
+      font-size: 2rem;
+      color: #222224;
+    }
+    
+    .tranding-slider-control .slider-arrow::after {
+      content: '';
+    }
+    
+    .tranding-slider-control .swiper-pagination {
+      position: relative;
+      width: 5rem;
+      bottom: 0rem;
+    }
+    
+    .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+      filter: drop-shadow(0px 8px 24px rgba(65, 82, 114, 0.178));
+    }
+    
+    .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+      background: var(--primary);
+    }
+
+    .containerC {
+      height: 250px;
+    }
+
+    .containerC .swiper {
+      height: 100%;
+    }
+
+    .swiper-3d {
+      /*perspective: 2010px;*/
+      perspective-origin: 50%;
+      perspective: 20%;
+    }
+
+/*/////////////////// ///////////////////////////// ////////////////////*/
+
+
+/*/////////////////////////// - Carousel 02 - /////////////////////////////*/
+
+        .containerC2 {
+          max-width: 80%;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        #tranding {
+          padding: 0rem 0;
+        }
+
+            @media (max-width:1440px) {
+              #tranding {
+                padding: 3rem 0;
+              }
+            }
+
+            @media (max-width:1200px) {
+              .containerC2 {
+                max-width: 80%;
+                margin: 0 auto;
+                text-align: center;
+              }
+            }
+
+        #tranding .tranding-slider2 {
+          height: 1rem;
+          padding: 1rem;
+          position: relative;
+        }
+
+            @media (max-width:500px) {
+              #tranding .tranding-slider2 {
+                height: 45rem;
+              }
+            }
+
+        .tranding-slide2 {
+          width: 8rem;
+          height: 5rem;
+          position: relative;
+          text-align: center;
+        }
+
+        @media (max-width:300px) {
+          .tranding-slide2 {
+            width: 15rem !important;
+            height: 5rem !important;
+          }
+          .tranding-slide2 .tranding-slide-img img {
+            width: 15rem !important;
+            height: 100% !important;
+          }
+        }
+
+        .tranding-slide2 .tranding-slide-img2 img {
+          width: 7rem;
+          height: 100%;
+          border-radius: 2rem;
+          object-fit:contain;
+        }
+
+        .swiper-slide-shadow-left,
+        .swiper-slide-shadow-right {
+          display: none;
+        }
+
+        .tranding-slider-control {
+          position: relative;
+          bottom: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .tranding-slider-control .swiper-button-next {
+          left: 18% !important;
+          transform: translateX(18%) !important;
+        }
+
+        @media (max-width:990px) {
+          .tranding-slider-control .swiper-button-next {
+            left: 70% !important;
+            transform: translateX(-70%) !important;
+          }
+        }
+
+        @media (max-width:450px) {
+          .tranding-slider-control .swiper-button-next {
+            left: 80% !important;
+            transform: translateX(-80%) !important;
+          }
+        }
+
+        @media (max-width:990px) {
+          .tranding-slider-control .swiper-button-prev {
+            left: 30% !important;
+            transform: translateX(-30%) !important;
+          }
+        }
+
+        @media (max-width:450px) {
+          .tranding-slider-control .swiper-button-prev {
+            left: 20% !important;
+            transform: translateX(-20%) !important;
+          }
+        }
+
+        .tranding-slider-control .slider-arrow {
+          background: var(--white);
+          width: 3.5rem;
+          height: 3.5rem;
+          border-radius: 50%;
+          left: 2%;
+          transform: translateX(-42%);
+          filter: drop-shadow(0px 8px 24px rgba(67, 76, 98, 0.829));
+        }
+
+        .tranding-slider-control .slider-arrow ion-icon {
+          font-size: 2rem;
+          color: #222224;
+        }
+
+        .tranding-slider-control .slider-arrow::after {
+          content: '';
+        }
+
+        .tranding-slider-control .swiper-pagination {
+          position: relative;
+          width: 5rem;
+          bottom: 0rem;
+        }
+
+        .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+          filter: drop-shadow(0px 8px 24px rgba(65, 82, 114, 0.178));
+        }
+
+        .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+          background: var(--primary);
+        }
+
+        .containerC2 {
+          height: 250px;
+        }
+
+        .containerC2 .swiper {
+          height: 100%;
+        }
+
+        .swiper-3d {
+          /*perspective: 2010px;*/
+          perspective-origin: 50%;
+          perspective: 20%;
+        }
 
 /*/////////////////// ///////////////////////////// ////////////////////*/
 
@@ -420,6 +829,96 @@
       padding: 2% 0;
     }
 
+    .title02Home {
+      font-size: 3em;
+      line-height: normal;
+    }
+
+    .titleVideos {
+      font-size: 3.4em;
+    }
+
+    .logoEnjoyHome {
+      width: 80%;
+    }
+
+    .imgEnjoyHome02 {
+      position: absolute;
+      right: 0%;
+      top: -520px;
+      width: 50%;
+    }
+
+    #firma {
+      margin: 8% 0;
+      margin-top: 29%;
+    }
+
+    .botones {
+      margin: 0% 2%;
+      padding: 15px 80px;
+      background-color: #F7A53B;
+      color: #fff;
+      border-radius: 10px;
+    }
+
+    .botones:hover {
+      background-color: #ffbc65;
+    }
+
+    .mailPDF_Home {
+      position: relative;
+      text-align: left;
+    }
+
+    .mailPDF_Home .botones {
+      margin: 0%;
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      box-shadow: 8px 4px 2px #22222437;
+    }
+
+    .comingSoonImgHome {
+      width: 55%;
+    }
+
+    .mockUpListHome {
+      width: 120%; 
+      margin-left: -20%;
+    }
+
+    .txtLearnToCookHome {
+      padding: 0 20%;
+      text-align: center;
+      margin-bottom: 5%;
+    }
+
+    .learnHomeimg {
+      display: flex;
+      text-align: right;
+      align-items: center;
+      vertical-align: middle;
+    }
+
+    .learnHomeimg01 {
+      text-align: right;
+    }
+
+    .learnHomeimg02 {
+      text-align: center;
+    }
+
+    .learnHomeimg03 {
+      text-align: left;
+    }
+
+    .comimgsoonFooter {
+      display: flex;
+      justify-content: end;
+    }
+
+
 /*/////////////////// ///////////////////////////// ////////////////////*/
 
 /*/////////////////// --------- ---------- --------- ///////////////////*/
@@ -434,6 +933,10 @@
           font-size: 1.7em;
         }
 
+        .txt {
+          font-size: 1.5em;
+        }
+
         .title01 {
           font-size: 5em;
           font-weight: 100;
@@ -445,6 +948,10 @@
 
         .justNotebook {
           display: initial;
+        }
+
+        .justIpadTablet {
+          display: none;
         }
 
         .justMobile {
@@ -462,9 +969,86 @@
         .imgFirmaHomeMeals {
           width: 40%;
         }
+
+        .colTitleHome {
+          width: 100%;
+        }
+        .colTitleHome img {
+          width: 100%;
+        }
+
+        .title02Home {
+          font-size: 2.5em;
+        }
+
+        .titleVideos {
+          font-size: 3.2em;
+        }
+
+        .imgCombineProteinsHome {
+          width: 400px;
+          margin-left: -25%;
+        }
+
+        .PDF_MealPlan {
+          right: -9%;
+        }
       }
 
 /*/////////////////// ///////////////////////////// ////////////////////*/
+
+      @media screen and (max-width: 1000px) {
+
+        .txtLearnToCookHome {
+          padding: 0 5%;
+        }
+
+        .imgHomeDec02 {
+          top: -100px;
+          width: 27%;
+        }
+
+        .imgEnjoyHome02 {
+          top: -490px;
+        }
+
+        .learnHomeimg01 {
+          text-align: right;
+          width: 50%;
+        }
+    
+        .learnHomeimg02 {
+          text-align: center;
+          width: 50%;
+        }
+    
+        .learnHomeimg03 {
+          text-align: left;
+          width: 100%;
+        }
+
+        .combine01 {
+          width: 100%;
+        }
+
+        .combine02 {
+          display: none;
+        }
+
+        .combine01 h2 {
+          text-align: center;
+        }
+
+        .navP .logo img {
+          width: 50%;
+        }
+        
+        .navbar-collapse {
+          margin-top: 5%;
+        }
+    
+
+      }
 
 /*////////////////////  ------IPAD & Tablet------  /////////////////////*/
 
@@ -473,8 +1057,16 @@
           font-size: 1.7em;
         }
 
+        .txt {
+          font-size: 1.4em;
+        }
+
         .justDesktop {
           display: none;
+        }
+
+        .justIpadTablet {
+          display: initial;
         }
 
         .justNotebook {
@@ -488,6 +1080,7 @@
 
         .title02 {
           font-size: 2.7em;
+          line-height: normal;
         }
 
         .justMobile {
@@ -520,6 +1113,117 @@
           width: 110%;
         }
 
+        .title02Home {
+          font-size: 2.5em;
+        }
+
+        .titleVideos {
+          font-size: 2.6em;
+        }
+
+        .imgCombineProteinsHome {
+          width: 350px;
+          margin-left: -35%;
+        }
+
+        .headerHowitWorksIMG {
+          background-position: top right;
+          padding: 10%;
+          padding-bottom: 0;
+        }
+
+        .titleHiW_Header {
+          margin-top: -3%;
+
+        }
+
+        .txtHiW_Header {
+          font-size: 1.3em;
+          margin-top: 10%;
+        }
+
+        .contentHeaderHowitWorks {
+          padding-right: 0;
+        }
+
+        .video02HiW, .video03HiW, .video04HiW, .video05HiW {
+          align-content: center;
+        }
+
+        .firma {
+          margin: 0;
+          padding: 0 10%;
+          margin-bottom: 15%;
+        }
+
+        .PDF_MealPlan {
+          position: absolute;
+          top: 80px;
+          right: 0%;
+          width: 35%;
+        }
+
+        .imgHomeDec01 {
+          top: -90px;
+        }
+
+        .mockUpListHome {
+          margin-left: 0%;
+          width: 100%;
+        }
+
+        .imgHomeDec02 {
+          top: -50px;
+          width: 30%;
+        }
+
+        .enjoyDownload {
+          margin-top: 9%;
+        }
+
+        .imgEnjoyHome02 {
+          top: -320px;
+        }
+
+        .imgHomeDec03 {
+          top: 10px;
+        }
+
+        .txtLearnToCookHome {
+          padding: 0%;
+        }
+
+        .learnHomeimg01 {
+          text-align: right;
+          width: 50%;
+        }
+    
+        .learnHomeimg02 {
+          text-align: center;
+          width: 50%;
+        }
+    
+        .learnHomeimg03 {
+          text-align: left;
+          width: 100%;
+        }
+
+        .combine01 {
+          width: 100%;
+        }
+
+        .combine02 {
+          display: none;
+        }
+
+        .combine02 h1 {
+          text-align: center;
+        }
+
+        .comimgsoonFooter {
+          justify-content: center;
+        }
+
       }
 
 /*/////////////////// ///////////////////////////// ////////////////////*/
@@ -527,6 +1231,10 @@
 /*////////////////////  ------ Cellphone ------  //////////////////////*/
 
       @media screen and (max-width: 590px) {
+        .firstTitleHome {
+          font-size: 2.5em;
+        }
+
         .navP {
           justify-content: center;
           text-align: center;
@@ -552,6 +1260,10 @@
         .title02 {
           font-size: 2.3em;
           line-height: normal;
+        }
+
+        .justIpadTablet {
+          display: none;
         }
 
         .justMobile {
@@ -628,6 +1340,171 @@
           text-align: center;
           margin-top: 50%;
           padding: 0;
+        }
+
+        .title02Home {
+          font-size: 2em;
+          text-align: center;
+        }
+
+        section {
+          padding-bottom: 5%;
+          padding-top: 13%;
+        }
+
+        .txt {
+          font-size: 1.3em;
+        }
+
+        .logoHome03 {
+          width: 70%;
+          margin-bottom: 10%;
+          margin-top: 40%;
+        }
+
+        .imgCombineProteinsHome {
+          width: 350px;
+          margin-left: 5%;
+        }
+
+        .imgHomeDec03 {
+          top: 0;
+          width: 18%;
+        }
+
+        .PDF_MealPlan {
+          position: absolute;
+          top: 100px;
+          right: 1%;
+          width: 38%;
+        }
+
+        .imgHomeDec01 {
+          top: -30px;
+          width: 18%;
+        }
+
+        .calendarHome {
+          width: 80%;
+        }
+        .mockUpHome01_Dsk {
+          width: 70%;
+          display: none;
+        }
+    
+        .mockUpHome01_Mobile {
+          display: initial;
+          width: 100%;
+        }
+
+        .video01HiW {
+          order: 1;
+          margin-top: 0;
+        }
+
+        .video01HiWtxt {
+          order: 2;
+        }
+
+        .video02HiW {
+          order: 1;
+          margin-top: 10%;
+        }
+
+        .video02HiWtxt {
+          order: 2;
+        }
+
+        .video03HiW {
+          order: 1;
+          margin-top: 10%;
+        }
+
+        .video03HiWtxt {
+          order: 2;
+        }
+
+        .video04HiW {
+          order: 1;
+          margin-top: 10%;
+        }
+
+        .video04HiWtxt {
+          order: 2;
+        }
+
+        .video05HiW {
+          order: 1;
+          margin-top: 10%;
+        }
+
+        .video05HiWtxt {
+          order: 2;
+        }
+
+        #videos {
+          padding-top: 3% !important;
+        }
+
+        .titleVideos {
+          font-size: 2.8em;
+        }
+    
+        .txtHiW_Header {
+          font-size: 1.3em;
+          margin-top: 0;
+        }
+
+        .titleHiW_Header {
+          margin-top: 22%;
+        }
+
+        .txtPDF_MealPlan {
+          font-size: 2em;
+        }
+
+        .comingSoonImgHome {
+          width: 50%;
+        }
+
+        .enjoyDownload {
+          text-align: center;
+          margin-top: 7%;
+        }
+
+        #firma {
+          margin: 8% 0;
+          margin-bottom: 15%;
+        }
+
+        .mealplanningIMG {
+          width: 50%;
+        }
+
+        .mealplanningIMG2 {
+          display: none;
+        }
+        
+        .botones {
+          margin: 0% 2%;
+          padding: 10px 30px;
+        }
+
+        .mailPDF_Home .botones  {
+          margin-bottom: 5%;
+        }
+
+        .imgEnjoyHome02 {
+          display: none;
+        }
+
+        .imgHomeDec02 {
+          top: 30px;
+          width: 32%;
+        }
+
+        .navbar-toggler {
+          margin: auto;
         }
 
       }
